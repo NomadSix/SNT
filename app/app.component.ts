@@ -2,17 +2,22 @@ import {Component} from 'angular2/core'
 import {HeaderService} from './header.service'
 import {AmenitiesComponent} from './amenities.component'
 import {CarouselComponent} from './carousel.component'
+import {NearbyComponent} from './nearby.component'
 
 @Component({
     selector: 'my-app',
     template: `
-        <p>{{ header }}</p>
         <div id="content">
-            <div class="left">
-            <carousel></carousel>
-            <amenities></amenities>
+        <p>{{ header }}</p>
+            <div class='sides'>
+                <div class="left">
+                <carousel></carousel>
+                <amenities></amenities>
+                </div>
+                <div class="right">
+                <nearby></nearby>
+                </div>
             </div>
-            <div class="right"></div>
         </div>
         `,
     styles: [`
@@ -33,9 +38,17 @@ import {CarouselComponent} from './carousel.component'
     .rigth {
         float: right;
     }
+    .sides {
+        padding: 0 1em;
+    }
+
+    #content {
+        width: 680px;
+        margin: 0 auto;
+    }
     `],
     providers: [HeaderService],
-    directives: [AmenitiesComponent, CarouselComponent]
+    directives: [AmenitiesComponent, CarouselComponent, NearbyComponent]
 })
 export class AppComponent { 
     header;

@@ -6,12 +6,7 @@ ul {
 }
 
 .carousel {
-    width: 400px;
-    height: 400px;
+    width: 455px;
+    height: 356px;
     background-image: url('content/carousel/bg.png')
-}
-
-#content {
-    width: 90%;
-    margin: 0 auto;
 }
