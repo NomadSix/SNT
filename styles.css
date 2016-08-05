@@ -1,27 +1,8 @@
 body {
     margin: 0;
 }
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 150%;
-
-    background-color: #000;
-    color: #fff;
-
-    border-top: 5px solid #4EBF4A;
-
-    padding: .5em 1em;
-}
 ul {
     padding: 0;
-}
-ul li {
-    list-style-type: none;
-
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-
-    font-family: Arial, Helvetica, sans-serif
 }
 
 .carousel {

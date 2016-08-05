@@ -15,6 +15,25 @@ import {CarouselComponent} from './carousel.component'
             <div class="right"></div>
         </div>
         `,
+    styles: [`
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 150%;
+
+        background-color: #000;
+        color: #fff;
+
+        border-top: 5px solid #4EBF4A;
+
+        padding: .5em 1em;
+    }
+    .left {
+        float: left;
+    }
+    .rigth {
+        float: right;
+    }
+    `],
     providers: [HeaderService],
     directives: [AmenitiesComponent, CarouselComponent]
 })
