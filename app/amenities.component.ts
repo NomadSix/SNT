@@ -4,38 +4,57 @@ import {AmenitieService} from "./amenitie.service"
 @Component({
     selector: 'amenities',
     template: `
-        <ul>
-            <li *ngFor="#amenitie of amenities">
-            <div class='container'>
-                <td class='icon'><i class="fa fa-question-circle-o fa-4x" aria-hidden="true"></i></td>
-            </div>
-            <span class='text'>{{ amenitie }}</span>
-            </li>
-        </ul>
+        <div class="amenities" *ngFor="#amenitie of amenities">
+        <div class='container'>
+            <i class='fa {{ amenitie.icon }}'></i>
+        </div>
+        <div class='content'>
+            <p>{{ amenitie.title }}</p>
+            <p>### near this listing
+        </div>
+        <div class='link'>
+        <p>See All <i id='right' class='fa fa-angle-right'></i></p> 
+        </div>
         `,
     styles: [`
-        li {
-            list-style-type: none;
+        #right {
+            float: right;
+            padding: 0 1em 0 1em;
         }
-        li div {
-            height: 70px;
-            width: 70px;
-            background-color: #f2f2f2;
+        .amenities {
+            background-color: #fff;
+            border-left: 5px solid #ccc;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
         }
-
-        .icon {
-            text-align: center;
-            vertical-align: middle
-        }
-        .text {
+        .content {
             display: inline-block;
-            font-family: Arial, Helvetica, sans-serif
         }
         .container {
-            border: 1px solid #ccc;
-            border-radius: 6px;
+            background-color: #f2f2f2;
             display: inline-block;
+            font-size: 40px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding: 15;
+        }
+        .link {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 900;
+            color: #cecece;
+            float: right;
             padding: 10px;
+        }
+        .link:hover {
+            color:green;
+        }
+        i #right.fa {
+            margin-top: 100px;
+        }
+        p {
+            margin: 0 auto;
         }
     `],
     providers: [AmenitieService]

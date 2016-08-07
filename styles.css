@@ -4,6 +4,9 @@ body {
 ul {
     padding: 0;
 }
+p {
+    font-family: Lato, sans-serif;
+}
 
 .carousel {
     width: 455px;

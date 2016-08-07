@@ -1,6 +1,9 @@
 
 export class NearbyService {
-    getService() : string[] {
-        return ["Nearby Restaurants", "Nearby Groceries", "Nearby Banks"];
+    getService() {
+        return [{title:"Nearby Restaurants", icon:'fa-cutlery'},
+                {title:"Nearby Groceries",icon:'fa-shopping-cart'}, 
+                {title:"Nearby Banks",icon:'fa-usd'}
+                ];
     }
 }

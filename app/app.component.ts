@@ -8,7 +8,7 @@ import {NearbyComponent} from './nearby.component'
     selector: 'my-app',
     template: `
         <div id="content">
-        <p>{{ header }}</p>
+        <p>Top Rated Amenities In and Around {{ header }}</p>
             <div class='sides'>
                 <div class="left">
                 <carousel></carousel>
@@ -22,8 +22,7 @@ import {NearbyComponent} from './nearby.component'
         `,
     styles: [`
     p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 150%;
+        font-size: 18px;
 
         background-color: #000;
         color: #fff;
