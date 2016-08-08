@@ -1,8 +1,9 @@
-import {Component} from 'angular2/core'
-import {HeaderService} from './header.service'
-import {AmenitiesComponent} from './amenities.component'
-import {CarouselComponent} from './carousel.component'
-import {NearbyComponent} from './nearby.component'
+import {Component} from '@angular/core'
+import {AmenitiesComponent} from './amenities/amenities.component'
+import {NearbyComponent} from './nearby/nearby.component'
+import {CarouselComponent} from './carousel/carousel.component'
+import {HTTP_PROVIDERS} from '@angular/http';
+import {Api} from'./api/api.service';
 
 @Component({
     selector: 'my-app',
@@ -23,12 +24,9 @@ import {NearbyComponent} from './nearby.component'
     styles: [`
     p {
         font-size: 18px;
-
         background-color: #000;
         color: #fff;
-
         border-top: 5px solid #4EBF4A;
-
         padding: .5em 1em;
     }
     .left {
@@ -40,19 +38,14 @@ import {NearbyComponent} from './nearby.component'
     .sides {
         padding: 0 1em;
     }
-
     #content {
         width: 680px;
         margin: 0 auto;
     }
     `],
-    providers: [HeaderService],
+    providers: [Api, HTTP_PROVIDERS],
     directives: [AmenitiesComponent, CarouselComponent, NearbyComponent]
 })
-export class AppComponent { 
-    header;
-
-    constructor(amenitieService: HeaderService){
-        this.header = amenitieService.getHeader();
-    }
+export class AppComponent {
+    header = "Wichita, KS";
 }

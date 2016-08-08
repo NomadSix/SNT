@@ -1,0 +1,41 @@
+i {
+    width: 180px;
+    height: 30px;
+    background-color: #4ebf4a;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: .5em;
+    transition: .25s;
+}
+i:hover {
+    background-color: #44a540;
+}
+.container {
+    cursor: pointer;
+    float: right;
+    text-align: center;
+    background-color: #333;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 10;
+    transform-style: preserve-3d;
+}
+.container:hover {
+}
+div.fa {
+    margin-top:40px;
+    color: white;
+}
+div.fa:hover {
+    color: #4ebf4a;
+}
+p {
+    posistion: absolute;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin-right: 25px;
+    margin-left: 25px;
+}

@@ -7,9 +7,3 @@ ul {
 p {
     font-family: Lato, sans-serif;
 }
-
-.carousel {
-    width: 455px;
-    height: 356px;
-    background-image: url('content/carousel/bg.png')
-}

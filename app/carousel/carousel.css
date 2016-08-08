@@ -1,0 +1,79 @@
+#location-info{
+font-size: 18px;
+text-align: center;
+color: white;
+}
+#des {
+    color: #fff;
+    padding-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+#left:hover {
+    background-color: green;
+}
+#left {
+    color: #fff;
+    margin-top: 55px;
+    text-align: center;
+    float: left;
+    height: 80px;
+    width: 40px;
+    border-radius: 0 80px 80px 0;
+    background-color: #000;
+    cursor: pointer;
+}
+e.fa {
+    color: white;
+    margin-top: 20px;
+}
+#right:hover {
+    background-color: green;
+}
+#right {
+    color: #fff;
+    margin-top: 55px;
+    text-align: center;
+    float: right;
+    height: 80px;
+    width: 40px;
+    border-radius: 80px 0 0 80px;
+    background: #000;
+    cursor: pointer;
+}
+#listing {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 7;
+}
+#image {
+    margin-top: 20px;
+    margin-left: 115px;
+    display: inline-block;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color:  #cccccc;
+    box-sizing: border-box;
+    background-color:  #f2f2f2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.carousel {
+    width: 455px;
+    height: 356px;
+    background-image: url('content/carousel/bg.png');
+}
+i {
+    padding-right: 6px;
+    color:  #44b244;
+}
+#right.fa {
+    color: white;
+}

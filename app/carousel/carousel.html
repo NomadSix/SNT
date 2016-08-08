@@ -1,0 +1,11 @@
+<div class='carousel'>
+    <p id='des'> What's the highest rated resturant in this area? </p>
+    <p id='listing'><i class="fa fa-map-marker"></i>Wichita, KS {{ location.postal_code }} </p>
+    <div id="image"> </div>
+    <div (click)="lastImage()" id="left" ><e class="fa fa-angle-left fa-2x"></e> </div>
+    <div (click)="nextImage()" id="right" ><e class="fa fa-angle-right fa-2x"></e> </div>
+    <div id="location-info">
+      <p id="title">{{ name }}</p>
+      <p id="addr">{{ location.address }}, Wichita, KS {{ location.postal_code }}</p>
+    </div>
+</div>
